@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FSM Watermakers - Made in Türkiye Marine Watermaker Sistemleri | Ümraniye İstanbul</title>
+<meta name="description" content="FSM Watermakers - Ümraniye İstanbul'da marine watermaker sistemleri. Annovi Reverberi pompa, Filmtec USA membran, SS316, GEWISS panel. 80-350L/h tam otomatik ters osmoz. Natoyolu Cad. 236 Ümraniye.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif}
+  h1,h2,h3{font-family:'Manrope',sans-serif}
+  .reveal{opacity:0;transform:translateY(18px);transition:all .7s cubic-bezier(.16,1,.3,1)}
+  .reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body class="bg-[#fbfdff] text-[#0A2540] antialiased">
+<header id="header" class="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-[#E6F0F7]">
+  <div class="max-w-[1200px] mx-auto px-6 lg:px-8 h-[72px] flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <img src="data:image/jpeg;base64,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" alt="FSM Watermakers Logo" class="h-[40px] w-auto object-contain bg-white rounded-[6px] p-1 border border-[#E6F0F7]">
+      <span class="font-extrabold tracking-tight text-[18px]">FSM<span class="font-medium opacity-60"> Watermakers</span></span>
+    </a>
+    <nav class="hidden md:flex items-center gap-7 text-[13px] font-semibold">
+      <a href="#urunler" class="hover:text-black/60">Ürünler</a>
+      <a href="#teknoloji" class="hover:text-black/60">Teknoloji</a>
+      <a href="#hizmetler" class="hover:text-black/60">Hizmetler</a>
+      <a href="#sss" class="hover:text-black/60">SSS</a>
+      <a href="#iletisim" class="hover:text-black/60">İletişim</a>
+      <a href="https://wa.me/905415014237" target="_blank" class="h-10 px-5 rounded-full bg-[#0A2540] text-white grid place-items-center">Teklif Al</a>
+    </nav>
+    <button id="mobileBtn" class="md:hidden h-10 w-10 rounded-full bg-[#f1f5f9]">≡</button>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden border-t border-[#E6F0F7] bg-white px-6 py-4 space-y-3">
+    <a href="#urunler" class="block">Ürünler</a>
+    <a href="#teknoloji" class="block">Teknoloji</a>
+    <a href="#hizmetler" class="block">Hizmetler</a>
+    <a href="#sss" class="block">SSS</a>
+    <a href="#iletisim" class="block">İletişim</a>
+    <a href="https://wa.me/905415014237" class="block mt-2 h-11 rounded-full bg-[#0A2540] text-white grid place-items-center font-semibold">WhatsApp: +90 541 501 42 37</a>
+  </div>
+</header>
+
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-b from-[#E6F0F7] to-white"></div>
+  <div class="absolute -top-[20%] right-[-10%] w-[60%] h-[70%] bg-[#0A2540]/[0.04] rounded-full blur-[80px]"></div>
+  <div class="relative max-w-[1200px] mx-auto px-6 lg:px-8 py-[48px] lg:py-[84px] grid lg:grid-cols-2 gap-10 items-center">
+    <div>
+      <div class="inline-flex items-center gap-2 h-7 px-3 rounded-full bg-[#0A2540] text-white text-[11px] font-bold tracking-wide">MADE IN TÜRKİYE • ÜMRANİYE İSTANBUL</div>
+      <h1 class="mt-5 text-[36px] lg:text-[56px] font-[800] leading-[0.95] tracking-[-0.02em]">Deniz Suyunu<br>Kesintisiz<br>Yaşama Dönüştürün.</h1>
+      <p class="mt-5 text-[16px] leading-[1.6] text-[#0A2540]/70 max-w-[520px]">Sınırsız su, sınırsız özgürlük. Yüksek verimli, düşük enerji tüketimli ters osmoz teknolojisiyle teknenizde her an taze ve içilebilir su. FSM Watermakers tam otomatik.</p>
+      <div class="mt-7 flex gap-3">
+        <a href="#urunler" class="h-12 px-7 rounded-full bg-[#0A2540] text-white font-semibold grid place-items-center">Ürünleri İncele</a>
+        <a href="#iletisim" class="h-12 px-7 rounded-full bg-white border border-[#E6F0F7] font-semibold grid place-items-center">İletişime Geç</a>
+      </div>
+      <div class="mt-8 flex gap-6 text-[12px]">
+        <div><b class="text-[18px] block">+245</b> Tamamlanan Proje</div>
+        <div><b class="text-[18px] block">+12</b> Yıl Tecrübe</div>
+        <div><b class="text-[18px] block">141.860 m³</b> Arıtılan Su</div>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="rounded-[28px] bg-[#0A2540] text-white p-8 lg:p-10 shadow-[0_24px_64px_rgba(10,37,64,0.25)]">
+        <div class="text-[12px] tracking-widest opacity-60 font-bold">FSM AKILLI SİSTEM</div>
+        <div class="mt-3 text-[28px] font-bold leading-tight">Tam Otomatik<br>Uzaktan Kontrollü</div>
+        <div class="mt-6 space-y-3 text-[13px]">
+          <div class="flex gap-2"><span class="h-6 w-6 rounded-full bg-white/10 grid place-items-center">✓</span> Annovi Reverberi - Italy yüksek basınç pompası</div>
+          <div class="flex gap-2"><span class="h-6 w-6 rounded-full bg-white/10 grid place-items-center">✓</span> Filmtec USA membran - %99.2 tuz giderim</div>
+          <div class="flex gap-2"><span class="h-6 w-6 rounded-full bg-white/10 grid place-items-center">✓</span> SS316 paslanmaz, GEWISS panel</div>
+          <div class="flex gap-2"><span class="h-6 w-6 rounded-full bg-white/10 grid place-items-center">✓</span> Otomatik ters yıkama + uzaktan kumanda</div>
+        </div>
+        <div class="mt-8 grid grid-cols-3 gap-3">
+          <div class="rounded-[14px] bg-white/10 p-3 text-center"><div class="text-[20px] font-bold">80</div><div class="text-[10px] opacity-60">L/H</div></div>
+          <div class="rounded-[14px] bg-white/10 p-3 text-center"><div class="text-[20px] font-bold">200</div><div class="text-[10px] opacity-60">L/H</div></div>
+          <div class="rounded-[14px] bg-white text-[#0A2540] p-3 text-center"><div class="text-[20px] font-bold">350</div><div class="text-[10px] opacity-60">L/H PRO</div></div>
+        </div>
+      </div>
+      <div class="absolute -bottom-6 -left-6 rounded-[16px] bg-white border border-[#E6F0F7] shadow-xl p-4 flex items-center gap-3">
+        <img src="data:image/jpeg;base64,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" class="h-8 w-auto">
+        <div class="text-[11px] leading-tight"><b class="block text-[12px]">FSM Watermakers</b>Ümraniye / İstanbul</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="urunler" class="max-w-[1200px] mx-auto px-6 lg:px-8 py-[64px]">
+  <div class="flex flex-wrap items-end justify-between gap-4">
+    <div><h2 class="text-[32px] font-extrabold tracking-tight">Watermaker Sistemleri</h2><p class="mt-2 text-[#0A2540]/60 text-[14px]">İhtiyacınıza göre seçin - 80L'den 350L+ kapasiteye kadar FSM serisi</p></div>
+    <div class="text-[11px] font-bold tracking-widest uppercase opacity-40">SS316 • GEWISS • FILMTEC™ • 230V / 12-24V</div>
+  </div>
+  <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+    <div class="group rounded-[22px] border border-[#E6F0F7] bg-white p-5 hover:shadow-[0_16px_40px_rgba(10,37,64,0.08)] transition">
+      <div class="flex items-center justify-between"><span class="h-7 px-3 rounded-full bg-[#E6F0F7] text-[11px] font-bold">Kompakt</span><span class="text-[12px] font-bold">80 L/h</span></div>
+      <h3 class="mt-4 text-[20px] font-bold">FSM 80</h3><p class="mt-2 text-[12px] leading-[1.5] opacity-70">Kompakt tekneler için ideal başlangıç. Düşük enerji ile yüksek verim.</p>
+      <ul class="mt-4 space-y-1.5 text-[11.5px]"><li>• 12V / 24V opsiyon</li><li>• 0.9 kW - 62 kg</li><li>• 32-40 ft yelkenli</li></ul>
+      <button onclick="openModal('FSM 80')" class="mt-5 w-full h-10 rounded-full bg-[#0A2540] text-white text-[13px] font-semibold">Detay ve Teklif</button>
+    </div>
+    <div class="group rounded-[22px] border border-[#0A2540] bg-white p-5 shadow-[0_12px_32px_rgba(10,37,64,0.12)]">
+      <div class="flex items-center justify-between"><span class="h-7 px-3 rounded-full bg-[#0A2540] text-white text-[11px] font-bold">En Popüler</span><span class="text-[12px] font-bold">150 L/h</span></div>
+      <h3 class="mt-4 text-[20px] font-bold">FSM 150</h3><p class="mt-2 text-[12px] leading-[1.5] opacity-70">Uzun seyirler için tam otomatik çözüm. Uzaktan kumanda ve akıllı yıkama.</p>
+      <ul class="mt-4 space-y-1.5 text-[11.5px]"><li>• Tam otomatik</li><li>• 1.1 kW - 78 kg</li><li>• 40-50 ft yat</li></ul>
+      <button onclick="openModal('FSM 150')" class="mt-5 w-full h-10 rounded-full bg-[#0A2540] text-white text-[13px] font-semibold">Detay ve Teklif</button>
+    </div>
+    <div class="group rounded-[22px] border border-[#E6F0F7] bg-white p-5 hover:shadow-[0_16px_40px_rgba(10,37,64,0.08)] transition">
+      <div class="flex items-center justify-between"><span class="h-7 px-3 rounded-full bg-[#E6F0F7] text-[11px] font-bold">Yüksek Debi</span><span class="text-[12px] font-bold">200 L/h</span></div>
+      <h3 class="mt-4 text-[20px] font-bold">FSM 200</h3><p class="mt-2 text-[12px] leading-[1.5] opacity-70">Orta-üst segment yatlar için yüksek debi ve stabilite.</p>
+      <ul class="mt-4 space-y-1.5 text-[11.5px]"><li>• Yüksek debi</li><li>• 1.5 kW - 92 kg</li><li>• 45-60 ft motoryat</li></ul>
+      <button onclick="openModal('FSM 200')" class="mt-5 w-full h-10 rounded-full bg-white border border-[#0A2540] text-[#0A2540] text-[13px] font-semibold">Detay ve Teklif</button>
+    </div>
+    <div class="group rounded-[22px] border border-[#E6F0F7] bg-white p-5 hover:shadow-[0_16px_40px_rgba(10,37,64,0.08)] transition">
+      <div class="flex items-center justify-between"><span class="h-7 px-3 rounded-full bg-[#0A2540]/10 text-[11px] font-bold">Pro-Flow</span><span class="text-[12px] font-bold">350 L/h</span></div>
+      <h3 class="mt-4 text-[20px] font-bold">FSM 350</h3><p class="mt-2 text-[12px] leading-[1.5] opacity-70">Büyük yatlar ve profesyonel kullanım için amiral gemisi.</p>
+      <ul class="mt-4 space-y-1.5 text-[11.5px]"><li>• Pro-Flow seri</li><li>• 2.2 kW - 128 kg</li><li>• 60ft+ & ticari</li></ul>
+      <button onclick="openModal('FSM 350')" class="mt-5 w-full h-10 rounded-full bg-white border border-[#E6F0F7] text-[13px] font-semibold">Detay ve Teklif</button>
+    </div>
+  </div>
+</section>
+
+<section id="teknoloji" class="bg-[#0A2540] text-white py-[64px]">
+  <div class="max-w-[1200px] mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-start">
+    <div>
+      <div class="text-[11px] tracking-[0.2em] uppercase opacity-50 font-bold">TEKNOLOJİ</div>
+      <h2 class="mt-3 text-[30px] font-bold leading-[1.1]">İtalyan Pompa,<br>Amerikan Membran,<br>Türk Mühendisliği</h2>
+      <p class="mt-4 text-[14px] leading-[1.6] opacity-70">FSM Watermakers tüm sistemlerinde marin sınıfı SS316 paslanmaz, GEWISS İtalyan elektrik panosu ve Filmtec™ USA membran kullanır. Ümraniye'deki atölyemizde 60 bar test ile teslim.</p>
+      <div class="mt-8 grid grid-cols-3 gap-3 text-center">
+        <div class="rounded-[14px] bg-white/10 p-4"><div class="text-[18px] font-bold">SS316</div><div class="text-[10px] opacity-60 mt-1">Paslanmaz Çelik</div></div>
+        <div class="rounded-[14px] bg-white/10 p-4"><div class="text-[18px] font-bold">< 58dB</div><div class="text-[10px] opacity-60 mt-1">Sessiz Çalışma</div></div>
+        <div class="rounded-[14px] bg-white text-[#0A2540] p-4"><div class="text-[18px] font-bold">%99.2</div><div class="text-[10px] opacity-60 mt-1">Tuz Giderim</div></div>
+      </div>
+    </div>
+    <div class="rounded-[22px] bg-white text-[#0A2540] p-6 lg:p-7">
+      <div class="text-[12px] font-bold">Teknik Paket - Tüm Modeller</div>
+      <div class="mt-4 space-y-2.5 text-[12.5px]">
+        <div class="flex gap-2"><span class="h-5 w-5 rounded-full bg-emerald-50 border border-emerald-100 grid place-items-center text-[10px]">✓</span> Yüksek basınç pompası (Annovi Reverberi - Made in Italy)</div>
+        <div class="flex gap-2"><span class="h-5 w-5 rounded-full bg-emerald-50 border border-emerald-100 grid place-items-center text-[10px]">✓</span> Alçak basınç pompası (FSM Türkiye Üretimi)</div>
+        <div class="flex gap-2"><span class="h-5 w-5 rounded-full bg-emerald-50 border border-emerald-100 grid place-items-center text-[10px]">✓</span> Membran filtre (Filmtec - Made in USA)</div>
+        <div class="flex gap-2"><span class="h-5 w-5 rounded-full bg-emerald-50 border border-emerald-100 grid place-items-center text-[10px]">✓</span> Basınç göstergesi - Paslanmaz çelik</div>
+        <div class="flex gap-2"><span class="h-5 w-5 rounded-full bg-emerald-50 border border-emerald-100 grid place-items-center text-[10px]">✓</span> Tatlı su debi göstergesi L/h</div>
+        <div class="flex gap-2"><span class="h-5 w-5 rounded-full bg-emerald-50 border border-emerald-100 grid place-items-center text-[10px]">✓</span> Otomatik ters yıkama valfi (Made in Italy)</div>
+        <div class="flex gap-2"><span class="h-5 w-5 rounded-full bg-emerald-50 border border-emerald-100 grid place-items-center text-[10px]">✓</span> Uzaktan kumanda kiti ve start butonu</div>
+        <div class="flex gap-2"><span class="h-5 w-5 rounded-full bg-emerald-50 border border-emerald-100 grid place-items-center text-[10px]">✓</span> Basınç sensörleri SS316</div>
+        <div class="flex gap-2"><span class="h-5 w-5 rounded-full bg-emerald-50 border border-emerald-100 grid place-items-center text-[10px]">✓</span> Basınç ayar valfi SS316 (FSM Türkiye Üretimi)</div>
+        <div class="flex gap-2"><span class="h-5 w-5 rounded-full bg-emerald-50 border border-emerald-100 grid place-items-center text-[10px]">✓</span> Kontrol paneli GEWISS (Made in Italy)</div>
+        <div class="flex gap-2"><span class="h-5 w-5 rounded-full bg-emerald-50 border border-emerald-100 grid place-items-center text-[10px]">✓</span> Enerji: 230V 50Hz - 12V/24V opsiyonel</div>
+      </div>
+      <div class="mt-6 rounded-[12px] bg-[#E6F0F7] p-3 text-[11px] text-center">Tüm sistemler Ümraniye atölyemizde test edilir • 1 Yıl Garanti</div>
+    </div>
+  </div>
+</section>
+
+<section id="hizmetler" class="max-w-[1200px] mx-auto px-6 lg:px-8 py-[64px]">
+  <h2 class="text-[30px] font-extrabold">Profesyonel Hizmetler</h2>
+  <div class="mt-8 grid md:grid-cols-3 gap-5">
+    <div class="rounded-[20px] border border-[#E6F0F7] bg-white p-6"><div class="h-10 w-10 rounded-[12px] bg-[#E6F0F7] grid place-items-center">🔧</div><h3 class="mt-4 font-bold">Profesyonel Servis</h3><p class="mt-2 text-[12.5px] opacity-70 leading-[1.6]">Periyodik bakım, arıza tespiti ve hızlı onarım. Ümraniye merkezden Marmara bölgesine aynı gün servis.</p></div>
+    <div class="rounded-[20px] border border-[#E6F0F7] bg-white p-6"><div class="h-10 w-10 rounded-[12px] bg-[#E6F0F7] grid place-items-center">♻️</div><h3 class="mt-4 font-bold">Sistem Yenileme (Refit)</h3><p class="mt-2 text-[12.5px] opacity-70 leading-[1.6]">Ömrünü tamamlamış sistemleri modernize ediyoruz. Düşük enerji, yüksek verim.</p></div>
+    <div class="rounded-[20px] border border-[#E6F0F7] bg-white p-6"><div class="h-10 w-10 rounded-[12px] bg-[#E6F0F7] grid place-items-center">⚙️</div><h3 class="mt-4 font-bold">İleri Teknoloji Çözümleri</h3><p class="mt-2 text-[12.5px] opacity-70 leading-[1.6]">Dayanıklı, kullanıcı dostu, tam marin uyumlu sistemler. Uzaktan kontrol ve otomasyon.</p></div>
+  </div>
+</section>
+
+<section id="sss" class="bg-[#f8fbfe] border-y border-[#E6F0F7] py-[64px]">
+  <div class="max-w-[1200px] mx-auto px-6 lg:px-8 grid lg:grid-cols-[0.9fr_1.1fr] gap-10">
+    <div><h2 class="text-[28px] font-extrabold leading-[1.1]">Sıkça Sorulan<br>Sorular</h2><p class="mt-3 text-[13px] opacity-60">FSM Watermakers hakkında merak edilenler</p></div>
+    <div class="space-y-3" id="faqList">
+      <div class="faq rounded-[16px] bg-white border border-[#E6F0F7] p-5 cursor-pointer"><div class="flex justify-between font-semibold text-[14px]">Watermaker ne kadar enerji harcar? <span>+</span></div><p class="mt-3 text-[12.5px] leading-[1.6] opacity-70 hidden">0.9 - 2.2 kW aralığında. FSM 150 modelinde 150 litre/saat için sadece 1.1 kW gerekir. 12V/24V DC ve 230V 50Hz AC opsiyonları mevcuttur.</p></div>
+      <div class="faq rounded-[16px] bg-white border border-[#E6F0F7] p-5 cursor-pointer"><div class="flex justify-between font-semibold text-[14px]">Bakım ne sıklıkla yapılmalı? <span>+</span></div><p class="mt-3 text-[12.5px] leading-[1.6] opacity-70 hidden">Ön filtreler her 150-200 saatte, karbon filtre 6 ayda bir kontrol edilir. Otomatik ters yıkama membranı korur. Yıllık profesyonel bakım önerilir.</p></div>
+      <div class="faq rounded-[16px] bg-white border border-[#E6F0F7] p-5 cursor-pointer"><div class="flex justify-between font-semibold text-[14px]">12V sistemde çalışır mı? <span>+</span></div><p class="mt-3 text-[12.5px] leading-[1.6] opacity-70 hidden">Evet. Tüm modeller 12V ve 24V DC opsiyonuna sahiptir. FSM 80 ve 150 düşük akım çekişi ile akü bankasından doğrudan çalışabilir.</p></div>
+      <div class="faq rounded-[16px] bg-white border border-[#E6F0F7] p-5 cursor-pointer"><div class="flex justify-between font-semibold text-[14px]">Membran ömrü ne kadar? <span>+</span></div><p class="mt-3 text-[12.5px] leading-[1.6] opacity-70 hidden">Filmtec USA membranlar düzenli yıkama ile 5-7 yıl ömre sahiptir. Otomatik yıkama ve SS316 valfler ömrü uzatır.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="iletisim" class="max-w-[1200px] mx-auto px-6 lg:px-8 py-[72px] grid lg:grid-cols-[1.1fr_0.9fr] gap-10">
+  <div>
+    <h2 class="text-[32px] font-extrabold leading-[1.1]">Teklif Alın<br>Ümraniye'den Dönelim</h2>
+    <p class="mt-3 text-[14px] opacity-70">Natoyolu Cad. 236 Ümraniye / İstanbul merkezli atölyemizden 24 saat içinde dönüş yapıyoruz.</p>
+    <form id="contactForm" class="mt-8 grid gap-4">
+      <div class="grid md:grid-cols-2 gap-4">
+        <input required name="name" placeholder="Ad Soyad" class="h-12 rounded-full border border-[#E6F0F7] px-5 text-[14px] outline-none focus:border-[#0A2540]">
+        <input required name="phone" placeholder="Telefon" class="h-12 rounded-full border border-[#E6F0F7] px-5 text-[14px] outline-none focus:border-[#0A2540]">
+      </div>
+      <div class="grid md:grid-cols-2 gap-4">
+        <select name="boat" class="h-12 rounded-full border border-[#E6F0F7] px-5 text-[14px]"><option>Yelkenli</option><option>Motoryat</option><option>Katamaran</option><option>Ticari</option></select>
+        <select name="capacity" class="h-12 rounded-full border border-[#E6F0F7] px-5 text-[14px]"><option>80L/h - FSM 80</option><option selected>150L/h - FSM 150</option><option>200L/h - FSM 200</option><option>350L/h - FSM 350</option></select>
+      </div>
+      <textarea name="message" placeholder="Mesajınız - tekne boyu, kullanım alanı..." class="min-h-[110px] rounded-[20px] border border-[#E6F0F7] p-5 text-[14px] outline-none focus:border-[#0A2540]"></textarea>
+      <button class="h-12 rounded-full bg-[#0A2540] text-white font-semibold">Gönder - Ümraniye Ekibi Dönüş Yapsın</button>
+      <div class="text-[11px] opacity-50 text-center">Gönderince ekibimiz nurivatankulu@gmail.com üzerinden dönüş yapar • KVKK uyumlu</div>
+    </form>
+  </div>
+  <div class="space-y-4">
+    <div class="rounded-[20px] bg-white border border-[#E6F0F7] p-6">
+      <div class="text-[11px] font-bold tracking-widest uppercase opacity-40">İLETİŞİM</div>
+      <div class="mt-4 space-y-3 text-[14px]">
+        <div class="flex gap-3"><span>📍</span><div><b>Adres</b><br>Natoyolu Caddesi, 236<br>ÜMRANİYE / İSTANBUL / Türkiye</div></div>
+        <div class="flex gap-3"><span>📧</span><div><b>Email</b><br><a href="mailto:nurivatankulu@gmail.com" class="text-[#0A2540] font-semibold underline">nurivatankulu@gmail.com</a></div></div>
+        <div class="flex gap-3"><span>📞</span><div><b>Telefon / WhatsApp</b><br><a href="tel:+905415014237" class="font-bold text-[16px]">+90 541 501 42 37</a><br><a href="https://wa.me/905415014237" target="_blank" class="mt-2 inline-flex h-9 px-4 rounded-full bg-[#25D366] text-white text-[12px] font-bold items-center">WhatsApp'tan Yaz</a></div></div>
+      </div>
+    </div>
+    <div class="rounded-[20px] bg-[#0A2540] text-white p-6">
+      <div class="text-[12px] font-bold">Neden FSM?</div>
+      <ul class="mt-3 space-y-2 text-[12px] opacity-80 leading-[1.5]">
+        <li>• Made in Türkiye - Ümraniye üretim ve test</li>
+        <li>• İtalyan Annovi Reverberi pompa + Amerikan Filmtec membran</li>
+        <li>• Tam otomatik, uzaktan kumanda, GEWISS panel</li>
+        <li>• Marmara bölgesinde aynı gün servis desteği</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="border-t border-[#E6F0F7] bg-white">
+  <div class="max-w-[1200px] mx-auto px-6 lg:px-8 py-8 flex flex-col md:flex-row gap-6 justify-between">
+    <div class="flex gap-3 items-center">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIbGNtcwIQAABtbnRyUkdCIFhZWiAH4gADABQACQAOAB1hY3NwTVNGVAAAAABzYXdzY3RybAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWhhbmSdkQA9QICwPUB0LIGepSKOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAABxjcHJ0AAABDAAAAAx3dHB0AAABGAAAABRyWFlaAAABLAAAABRnWFlaAAABQAAAABRiWFlaAAABVAAAABRyVFJDAAABaAAAAGBnVFJDAAABaAAAAGBiVFJDAAABaAAAAGBkZXNjAAAAAAAAAAV1UkdCAAAAAAAAAAAAAAAAdGV4dAAAAABDQzAAWFlaIAAAAAAAAPNUAAEAAAABFslYWVogAAAAAAAAb6AAADjyAAADj1hZWiAAAAAAAABilgAAt4kAABjaWFlaIAAAAAAAACSgAAAPhQAAtsRjdXJ2AAAAAAAAACoAAAB8APgBnAJ1A4MEyQZOCBIKGAxiDvQRzxT2GGocLiBDJKwpai5+M+s5sz/WRldNNlR2XBdkHWyGdVZ+jYgskjacq6eMstu+mcrH12Xkd/H5////2wBDAAkGBwgHBgkICAgKCgkLDhcPDg0NDhwUFREXIh4jIyEeICAlKjUtJScyKCAgLj8vMjc5PDw8JC1CRkE6RjU7PDn/2wBDAQoKCg4MDhsPDxs5JiAmOTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTn/wAARCABrAPYDASIAAhEBAxEB/8QAHAABAAEFAQEAAAAAAAAAAAAAAAYBAgQFBwMI/8QATxAAAQMCAgQHDAcEBwgDAAAAAQIDBAAFBhESIVTRFBYxNVGTsQcTFSJBU2Fxc4GioxcyNFWCkbIIQpShJDNScnTB0iM2VoOSw+HwYnWz/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAECAwQF/8QALhEAAgIBAwICCAcAAAAAAAAAAAECEQMSIVEEMUFhBRMiI0JSgbEUMnGhweHw/9oADAMBAAIRAxEAPwDsFvt8IwIxMOOSWk5nvSegeivfwdB2KN1Sd1XW7m+L7JPYK8+9B+W8FuOgICQAlxSRyeg0Bd4Og7FG6pO6ng6DsUbqk7qrwJvzkjr176cCb85I69e+gKeDoOxRuqTup4Og7FG6pO6q8Cb85I69e+nAm/OSOvXvoCng6DsUbqk7qeDoOxRuqTuqvAm/OSOvXvpwJvzkjr176Ap4Og7FG6pO6ng6DsUbqk7qrwJvzkjr176cCb85I69e+gKeDoOxRuqTup4Og7FG6pO6q8Cb85I69e+nAm/OSOvXvoCng6DsUbqk7qeDoOxRuqTuqvAm/OSOvXvpwJvzkjr176Ap4Og7FG6pO6ng6DsUbqk7qrwJvzkjr176cCb85I69e+gKeDoOxRuqTup4Og7FG6pO6q8Cb85I69e+nAm/OSOvXvoCng6DsUbqk7qeDoOxRuqTuqvAm/OSOvXvpwJvzkjr176Ap4Og7FG6pO6ng6DsUbqk7qrwJvzkjr176cCb85I69e+gKeDoOxRuqTup4Og7FG6pO6q8Cb85I69e+nAm/OSOvXvoCng6DsUbqk7qeDoOxRuqTuqvAm/OSOvXvpwJvzkjr176Ap4Og7FG6pO6ng6DsUbqk7qrwJvzkjr176cCb85I69e+gKeDoOxRuqTup4Og7FG6pO6q8Cb85I69e+rIwLc59kLWpAabUAtRVkSVg6z6hQGrxNBhogNlESOk99GsNjoPopWRinm9v2o7DSgNhbub4vsk9gox9rk/h7KW7m+L7JPYKMfa5P4eygMilKUApVrjiGm1OOLShCRmpSjkAPSai9zx/YoBUEuuSSNX+xSNH8yQPyqG0u5nkzQx/ndEqpWhs18n3cJdbsrseMrWHZLuhmOkJyJr0xLiWFhxqOuYl08IUUN6AGWkBnkSSMtXZVoRc3UQskXHV4fozdUqLWTG0K5SzHeaMUqOTalrBCvQeg1KatkxTxupqiMOfHmjqxu0KVRSglJUogJAzJPIKjqseYUSog3+Acuh0EfmKqot9kaWkSOlRvj7hP7/AIPWU4+4T+/4PWVOiXA1IklKjfH3Cf3/AAesrY2nEFnvKlJttziyloGaktOAqA6cuXKjjJd0LRs6UJyGZ5Kj72NsLsuracv0ALQclDvwOR91Qk32JuiQUqOce8Kff8DrRTj3hT7/AIHWip0S4ItEjpUc494U+/4HWit9GkMy2G5EZ5t5lwaSHG1BSVDpBHLUOLXdC0z1pWluGLcPW2UuLNvMJiQj67anRpJ9Y8lY3HvCn3/A60VOiXAtEjpUc494U+/4HWinHvCn3/A60U0S4FokdKjnHvCn3/A60VuLbcoN1iiVb5bMpgnLTaWFDPo1eWocWu6Foy6xG+dJHsGv1OVl1iN86SPYNfqcqCTCxTze37UdhpTFPN7ftR2GlAbC3c3xfZJ7BRj7XJ/D2Ut3N8X2SewUY+1yfw9lAZFeb7zcdhx95YQ02kqUo8gA5TXpUI7p91VGt7FvbORkkrcIP7ifJ7z2VDdKzDqMywYnkfgQvGmLZV4kd6b00xirJlgeX0qy5T6KmOBcDt29tu53dAeuKgFIbWM0se7+12VEO5fakXjE7k59AWzBAcSCNWmTkjsJ9YrtNUgr3Zw9Dgc/f5d5MVHsb4ZRiqzcCLwYeQsONOFOkArIjIjoIJqQ0raEnCSlHuj1T5zmM3TC1wNuujKkjlSRrSpP9pB8o/8AdVdYwBiUz2k2+U7pvBOkw4TrWnLk9JHZ6q3eK8OxMS2lyFJSErHjMvAeM0vyEf5jy1xSwyJlhvDkJ/xJcF4kJPSDrA9B1Eeg168Zx6zE4v8AMjy+qxfhp/isW3zLlc/qdf7pS1IwHe1IUUngyhmD5DkDXzMy0t55tlsZrcWEJHSSch219J90R5EjudXZ9H1HImmnPoORr53sICr/AGoHkM1gfMTXL0u0GdeX2miSfRdi/wC7UdejfT6L8X/dqOvRvrMxbfsaM4nujTMu7tMokLS2hlK9AJz1ZZDoyrU8Ysc/eF9/6V7q0TytXaKtQXgzK+i/F/3ajr0b60L8C9YcvIStiTCuMRQUlaRmUnlBBGogj3eQ1I7Bf8dOX22tiXeHQuS2lSHULKFJKhmFZjLLLPM+SvokpB5QKznmnjdSplo41JWtiISby9du5VMu2SmJLtqeWoDUUOBCgrL3g1wDC9pF8v8AAtPfe8CUso74E6Whkknk8vJX0ziuK9NwteIkZvTffhPNtoH7yiggD86+boVjxVBlNSolkvjEho5ocRBeCknLLV4vQTUdM1plWxbKt1sdI+g9H/EC/wCFH+qn0Ho/4gX/AAo/1VEfCHdL6MUfwj3+mnhDul9GKP4R7/TVqy/OivsfKza4k7kF2tzDbtpfN1JJC29BLSk9BGasjXRO5LZLrYMLrh3ZvvTipK3GmtMK0EFKdWrUPG0j7641OxLji3KQmfcb3DUsEoElK2ioDly0gM6633Gb1cb3hmW7c5bkp1mappC3MtLR0EKyJ8utR5apmWT1ftNMtj06tkcHvK1LvNxcWoqUqU6SScyfHNSON3NcVyY7Uhq3oU06gLQe/JGYIzFRq8c6XD/Eu/rNfVGHxlYbaDyiK1+gVrmyvGlRSEFNuz5tvWD7vYUtquoixO+nJAXITmrpyA15a+Ws+N3NsUS47cmNEYeYdSFIcbkoUlQPIQQalP7QPONm9i72pronc0/3BsX+ERVJZ5LGp8krFFyaPnvEWGrrht1hq6x0sqfSVNgLCswMs+T110j9ntairEDekdAcHUE56gT3wE+vUPyFeX7QSf6bY1Zcrbwz96N9X/s9f12If7sb/u1M5OeDU/8AbiMdOSkdkrEb50kewa/U5WXWI3zpI9g1+pyvPOkwsU83t+1HYaUxTze37UdhpQGwt3N8X2SewUY+1yfw9lLdzfF9knsFGPtcn8PZQGRXIO6dLLt/koBOUdlKB6yNLP4v5V1+orjPB7WIUB1hxEaX9VThTmFJ9I6R/wCKrNNrY4uvwTzYtMO9pkc7l0N3ibeXYwVwqQVobKTonMI8XI+snX6avsWALkqDb3Lnc1tqU03wlguSC6FZDSHfA/o5556wnIdBqaWOwQ7LZhbYhUEFJ03P3lqIyKqsVh9pakqckvuaISMlZZasteWWWeoVriemNXRtig4QjGuxE7xh+7i+yVxlT34xaZbQXW++gaKSCQRJbOZ8uadZyqyBh67XGTY491YlMRWBMMlDMxaPrLT3knJwq1gKyGkQNYqYtWCO2gI766oBWeaiCfJqzOvyV5jDccJUnhUo6RSc++dGfL08u7KtNa5/YvT4I3YcMXK033D8j+lqQIz4uJVMW6jvmSdDUpR/+XIK0HdTt6YmMrdcG05CawpC9EcqkeU+sKH/AE10yLZ2Y0hl5txzSbBGs/Wzz5fVn/IVGO6DbVXa+YehoB0i46okeROQBP8AOtuly1mTvbcy6hXgmq7pouxYhTfclloXqULenMe4VwXDo0sR2hIGec5jV/zE19UTIEWdBcgymEOxXEaC2lDMFPRUXtXczwvark3PYhuLeaUFth15S0oUDmCAfKPTVMeeMVK/Et6ppRS8CY0pSuU3FKxJdxjQ5MSM8spdlrKGgEk5kDM+rVWXU00RaZiXeYbfaZs1KA4qMwt0IJy0ilJOWfurklk7tMhU8C8QGUQlA+NGBK0atWonXXZVJStJSoBSSMiCMwRUGf7kuEnXluCLIaCjnoNvqCU+gDyCtcTxpNTRWal8JjjuxYXJ5Jw/5H/mq/TBhbpm9Qav+iHCfmpn8Sqn0Q4T81M/iVVb3HmR7zyOa91bFdsxXPtr1sLxRGacQvvregc1FJGX5Gp33Av91bj/APYq/wDyarP+iHCfmpn8SqpC3DgYNwxITbIYSxFbU73vSOa1cpJUczmemrTyRlBY4FVFxbnI+Y7zzlcf8Q9+s19W2YaNogg+SO2PhFRdrAOFbw6xen7SlLslAeWyHFd7KlazmkajrPv6KmaUhKQlIASBkAOQVXPlU0kvAnHGrfJyHu72yfMlWh+LCkyGkocbUplpS8lEpIBy5M8jXQMAxJEDBlmiS2VMyGoqErbWMik5chrf0rOWRuChwXUabZxv9oP+vsP92R2t0/Z6/rsQ/wB2N/3a6biTDVpxNFQxdYoeDZJbWCUrbJ5dFQ1jPIZ9OVW4awxaMMRnGbVFDXfSC44olS3Ms8s1HozOQ9JrX1y9To8f7KaHr1G5rEb50kewa/U5WXWI3zpI9g1+pyuY1MLFPN7ftR2GlMU83t+1HYaUBsLdzfF9knsFGPtcn8PZS3c3xfZJ7BRj7XJ/D2UBkUpSgIVd7/LwddEomsuSrHJObLqNa458qDn9YeUDlA5M8qklovtrvLQct81l8eVKVeMn0FPKK9rpbot1guw5jQcZcGsHlB8hB8hHTXI8Rdzu522Qp+AhcuMORxo5OpHpSOX1j8hXPOU8btK0epgxdP1cdMpaJ/s/7+52etfdL5a7Q3pz57EceQKV4x9QGs+6uAPSLmyC09cZ7Q/sOvOJ/kTXnHt70xwKbQ9JWrVm2grJ9+usn1nCO6PoFrec9jqQ7rFn4cpow5nBBySABr6TocuX/uVTSOwzKks3QBRUqOEtBacihKvGPqJ8XP1VybD/AHP7tNfaVKiiHECwXO/Hx1pBzICeXXya8q7KAAMgMgK26eeSVuR5/pLB02Jxjhdvx3v/ADMG/uuM2Se60tTbiGFqStPKk5HWK0D90kKs2GH2pSyZUllDqwfrgoVmD7xUivMZyZaZkZrLvjrKkJzOQzIqCQbFieLa7dA4BEUmBK4UlZk5aZ8bxcstX1jrr0MKi47tXf8AB4eZzUtk6r+Ub66z3WcST2HJr7ENu0F897yJQrTIKwMuXIVF3rulcB5+HfcSuqCFFtRYBQVAasyByZ8tbx21X26TLpLmQo8ZT9sVDaQh/TzUSSMzlq5axbZbsV2/Da7Im1w1tqbcR30yciNPPXll5M62hoS7q9uDCeuUuzrfkxcQMXK4NYUej3F1MyQ2AkqOSUr0MyvkzzPJTEk+62qZYIEy7SGQtoCU7H8YqOlkSNWZPu91bNdqvqYGHlogR1SbWohTXCMkqTo6IOllXpimz3iZfrTdYEZl0xE5rbW7o+Nnnln/AJ1MZxtJ1W/HmJY5aW1duufKzX224PDEltahXm6Tozge4QJTRSlOSM08qR5c/wAquscS7X2wOTo2IpyZuktAbK0htKgdQOrPLLL863TLmKZd1hmREjw4KA4H0tvhwuZp8XyZjI9HTVmALJOscGYzOShKnZBcQEq0hlkB/lVJTSjaq9uH4svCDcqd1vyvBeZgxWLldMRXGC7fZkYxGmMkMKTkolHjHWOkfzrUrXdzhCZe/D9w7+w4pCUApCSEr0QTq6NdSKFY57WPpl4WhAhOsd7SQvWTknye414HD1xOBp1p72jhbzq1ITpjIguaQ1+qpWSKa7fDx9SHjk09n8XP0Ma/3RhF1THVeb0xIUyhRYhthSfq55jVn6a17U9+RAxLHM64SY6IAUgTUaC0k6WerIaq2U6y32Ni1F5t8SPIQmOlvRce0czo5GrZNsxLPlXR1+3RWhOh8HOjI0tEpCik8mvMnKrRcElTXZcclZKbbtPu/B8GNacZBGDkNLZm8MbjqbS60wSgEZhJ0uTyCsS7Xm4Npwyhy6ymGpMVKpDjJ01E9OoHM1KLDZZsLA67S8lAllp5AAVmM1FRGv3itNKw1e2lYckRY0d122sBLjandEaQ9NIyxa3XL+zIlHN6tXfZfdWLbPc4w25qFebtOZcK+/pkNFKUgJzHKkVZh2LeL/ho3BnEc1M9RWnvemkNpUFHIHxc8ssj763zDuKZV0iGRDjw4SCrvwQ+HNMEavJnqPRXj3PLFPsNvlMT0tpW49pJ0F6QyyAqsppRbVXtw+S8YSc0ndb8rjzNJMuK0YkuEK64mk25uO2wGw0RktRbBV5D5dfvrc4Okd+uc9LWIFXWKG0FsOHx0HXmTqAyr1nt4hbvcx1i3Qp0JwIDIdcSgoyT437pJzPT0VjYLsdyt15u0+fGZjpmEKQ204FBJ0iSNXrqJOLxvt2XHl9SYKSyLv3fPn50TGsRvnSR7Br9TlZdYjfOkj2DX6nK4juMLFPN7ftR2GlMU83t+1HYaUBsLdzfF9knsFGPtcn8PZS3c3xfZJ7BRj7XJ/D2UBkUpSgFKUoC1TaFHNSEk9JFEoSj6qQPUMqupQWKUpQClKUApSlAKUpQClKUApSlAKUpQClKUApSlAKUpQCsRvnSR7Br9TlZdYjfOkj2DX6nKAwsU83t+1HYaUxTze37UdhpQGwt3N8X2SewUXF0nlOpfdbKgAQkjI5esVCmr7cm2kIRJySlIAGgnUPyq/jBdNq+WndQEx4Mva5Hw7qcGXtcj4d1Q7jBdNq+WndTjBdNq+WndQEx4Mva5Hw7qcGXtcj4d1Q7jBdNq+WndTjBdNq+WndQEx4Mva5Hw7qcGXtcj4d1Q7jBdNq+WndTjBdNq+WndQEx4Mva5Hw7qcGXtcj4d1Q7jBdNq+WndTjBdNq+WndQEx4Mva5Hw7qcGXtcj4d1Q7jBdNq+WndTjBdNq+WndQEx4Mva5Hw7qcGXtcj4d1Q7jBdNq+WndTjBdNq+WndQEx4Mva5Hw7qcGXtcj4d1Q7jBdNq+WndTjBdNq+WndQEx4Mva5Hw7qcGXtcj4d1Q7jBdNq+WndTjBdNq+WndQEx4Mva5Hw7qcGXtcj4d1Q7jBdNq+WndTjBdNq+WndQEx4Mva5Hw7qcGXtcj4d1Q7jBdNq+WndTjBdNq+WndQEx4Mva5Hw7qcGXtcj4d1Q7jBdNq+WndTjBdNq+WndQEx4Mva5Hw7qcGXtcj4d1Q7jBdNq+WndTjBdNq+WndQEx4Mva5Hw7qcGXtcj4d1Q7jBdNq+WndTjBdNq+WndQEx4Mva5Hw7quYjBp1bpcccWtISSvLkGeXIB0moZxgum1fLTupxgum1fLTuoCRYp5vb9qOw0qKzbvOlNBDz+kkKzA0EjX7hSgP/2Q==" class="h-9 w-auto border border-[#E6F0F7] rounded p-1 bg-white">
+      <div><div class="font-bold text-[13px]">FSM Watermakers</div><div class="text-[11px] opacity-50">Natoyolu Cad. 236 Ümraniye / İstanbul</div></div>
+    </div>
+    <div class="text-[11px] opacity-50 leading-[1.6] max-w-[460px]">Bu sitede yer alan bilgiler bilgilendirme amaçlıdır. Kişisel verileriniz yalnızca teklif ve iletişim amacıyla işlenir. Detaylı KVKK metni için nurivatankulu@gmail.com üzerinden talep edebilirsiniz.</div>
+  </div>
+  <div class="border-t border-[#E6F0F7] max-w-[1200px] mx-auto px-6 lg:px-8 h-[64px] flex items-center justify-between text-[11px] opacity-40">
+    <div>© 2026 FSM Watermakers - Natoyolu Cad. 236 Ümraniye / İstanbul - Tüm Hakları Saklıdır.</div>
+    <div>nurivatankulu@gmail.com • +90 541 501 42 37</div>
+  </div>
+</footer>
+
+<div id="modal" class="fixed inset-0 z-[80] hidden">
+  <div class="absolute inset-0 bg-[#0A2540]/60 backdrop-blur-[8px]" onclick="closeModal()"></div>
+  <div class="relative max-w-[720px] mx-auto mt-[8vh] bg-white rounded-[28px] shadow-[0_32px_80px_rgba(0,0,0,0.35)] overflow-auto max-h-[86vh]">
+    <div class="sticky top-0 bg-white/90 backdrop-blur-xl border-b border-[#E6F0F7] p-6 flex justify-between items-center"><div><div id="modalTitle" class="font-extrabold text-[18px]"></div><div id="modalSub" class="text-[11px] opacity-50 uppercase font-semibold"></div></div><button onclick="closeModal()" class="h-10 w-10 rounded-full bg-[#f1f5f9]">✕</button></div>
+    <div class="p-7">
+      <div class="text-[11px] font-bold tracking-widest uppercase opacity-40">FSM Watermakers Teknik Paket</div>
+      <p id="modalDesc" class="mt-2 text-[14px] font-medium"></p>
+      <div class="mt-5 space-y-2 text-[12.5px]" id="modalTech"></div>
+      <button onclick="document.getElementById('iletisim').scrollIntoView({behavior:'smooth'}); closeModal();" class="mt-6 w-full h-12 rounded-full bg-[#0A2540] text-white font-semibold">Bu ürün için teklif al →</button>
+      <div class="mt-4 text-[11px] text-center opacity-50">Natoyolu Cad. 236 Ümraniye / İstanbul • +90 541 501 42 37 • nurivatankulu@gmail.com</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const mobileBtn = document.getElementById('mobileBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  mobileBtn.addEventListener('click', ()=> mobileMenu.classList.toggle('hidden'));
+  document.querySelectorAll('#mobileMenu a').forEach(a=> a.addEventListener('click', ()=> mobileMenu.classList.add('hidden')));
+
+  const products = {
+    'FSM 80': { desc: 'Kompakt tekneler için ideal başlangıç sistemi. Düşük enerji ile yüksek verim.', sub: 'Kompakt • 32-40 ft yelkenli' },
+    'FSM 150': { desc: 'Uzun seyirler için tam otomatik çözüm. Uzaktan kumanda ve akıllı yıkama ile konfor.', sub: 'En Popüler • 40-50 ft yat' },
+    'FSM 200': { desc: 'Orta-üst segment yatlar için yüksek debi ve stabilite. Sürekli üretim odaklı.', sub: 'Yüksek Debi • 45-60 ft motoryat' },
+    'FSM 350': { desc: 'Büyük yatlar ve profesyonel kullanım için Pro-Flow serisi amiral gemisi.', sub: 'Pro-Flow • 60ft+ & ticari' },
+  };
+  const techList = [
+    'Yüksek basınç pompası (Annovi Reverberi - Made in Italy)',
+    'Alçak basınç pompası (FSM Türkiye Üretimi)',
+    'Membran filtre (Filmtec - Made in USA)',
+    'Basınç göstergesi (Paslanmaz çelik)',
+    'Tatlı su debi göstergesi L/h',
+    'Otomatik ters yıkama valfi (Made in Italy)',
+    'Uzaktan kumanda kiti ve start butonu',
+    'Basınç sensörleri SS316',
+    'Basınç ayar valfi SS316 (FSM Türkiye Üretimi)',
+    'Kontrol paneli GEWISS (Made in Italy)',
+    'Enerji: 230V 50Hz - 12V/24V opsiyonel'
+  ];
+  function openModal(name){
+    const p = products[name];
+    document.getElementById('modalTitle').innerText = name;
+    document.getElementById('modalSub').innerText = p.sub;
+    document.getElementById('modalDesc').innerText = p.desc;
+    document.getElementById('modalTech').innerHTML = techList.map(t=> `<div class='flex gap-2'><span class='h-5 w-5 rounded-full bg-emerald-50 border border-emerald-100 grid place-items-center text-[10px]'>✓</span> ${t}</div>`).join('');
+    document.getElementById('modal').classList.remove('hidden');
+  }
+  function closeModal(){ document.getElementById('modal').classList.add('hidden'); }
+
+  document.querySelectorAll('.faq').forEach(el=>{
+    el.addEventListener('click', ()=>{
+      const p = el.querySelector('p');
+      const isHidden = p.classList.contains('hidden');
+      document.querySelectorAll('.faq p').forEach(x=> x.classList.add('hidden'));
+      if(isHidden) p.classList.remove('hidden');
+    })
+  });
+
+  document.getElementById('contactForm').addEventListener('submit', e=>{
+    e.preventDefault();
+    const data = new FormData(e.target);
+    alert(`Teşekkürler ${data.get('name')}! En kısa sürede döneceğiz.\nTekne: ${data.get('boat')} - ${data.get('capacity')}\n\nÜmraniye ekibimiz 24 saat içinde dönüş yapacak.\nTel: +90 541 501 42 37\nAdres: Natoyolu Caddesi 236 Ümraniye / İstanbul`);
+    e.target.reset();
+  });
+
+  const obs = new IntersectionObserver(entries=> entries.forEach(entry=>{ if(entry.isIntersecting) entry.target.classList.add('in'); }), {threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(el=> obs.observe(el));
+</script>
+</body>
+</html>
